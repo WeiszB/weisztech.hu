@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdf6f0;
+    font-family: 'Georgia', serif;
+    color: #3a3a3a;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    padding: 40px 24px;
+    text-align: center;
+}
+
+/* --- KÉPEK --- */
+
+/* Teljes szélességű kép (pl. fejléc fotó) */
+.img-full {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 24px auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Közepes méretű, középre igazított kép */
+.img-center {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 24px auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Kisebb, kerek kép (pl. portré) */
+.img-round {
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin: 24px auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Több kép sorban (2 oszlop) */
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 24px 0;
+}
+
+.img-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* --- SZÖVEG --- */
+
+h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    color: #5a3e2b;
+}
+
+p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 14px;
+}
+
+strong {
+    color: #5a3e2b;
+}
+
+/* Elválasztó vonal */
+.divider {
+    border: none;
+    border-top: 1px solid #d4b896;
+    margin: 28px auto;
+    width: 60%;
+}
+
+/* --- MOBIL --- */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 0.97rem;
+    }
+
+    .img-center {
+        width: 100%;
+    }
+
+    .img-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .img-grid img {
+        height: 180px;
+    }
+}
