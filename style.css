@@ -84,6 +84,63 @@ body.home {
     color: #aaa;
 }
 
+/* ===== ESKÜVŐ HUB OLDAL ===== */
+
+body.wedding-hub {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fdf6f0;
+    position: relative;
+}
+
+.wedding-hub__bg {
+    position: fixed;
+    inset: 0;
+    background-image: url('eskuvo_hatter.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.wedding-hub__header {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 64px 24px 16px;
+}
+
+.wedding-hub__title {
+    font-size: 2.2rem;
+    font-weight: normal;
+    letter-spacing: 3px;
+    color: #5a3e2b;
+}
+
+.wedding-hub__date {
+    font-size: 1.05rem;
+    color: #a07850;
+    letter-spacing: 1px;
+    margin-top: 8px;
+}
+
+.wedding-hub__grid {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+}
+
+.wedding-card {
+    border: 1px solid #e8d5c0;
+    background: rgba(255,255,255,0.92);
+}
+
+.wedding-card h2 {
+    color: #5a3e2b;
+}
+
 /* ===== ESKÜVŐ OLDAL ===== */
 
 body.invite {
