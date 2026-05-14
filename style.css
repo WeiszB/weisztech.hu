@@ -141,6 +141,44 @@ body.wedding-hub {
     color: #5a3e2b;
 }
 
+.wedding-quote {
+    position: relative;
+    z-index: 1;
+    margin: 32px auto 0;
+    max-width: 580px;
+    padding: 40px 64px;
+    border: 1px solid #c9a87a;
+    outline: 1px solid #c9a87a;
+    outline-offset: 8px;
+    text-align: center;
+    font-style: italic;
+    color: #5a3e2b;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.wedding-quote::before,
+.wedding-quote::after {
+    content: '✦';
+    display: block;
+    color: #c9a87a;
+    font-size: 0.85rem;
+    font-style: normal;
+    line-height: 1;
+}
+
+.wedding-quote::before { margin-bottom: 14px; }
+.wedding-quote::after  { margin-top: 14px; }
+
+.wedding-quote cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.92rem;
+    font-style: normal;
+    color: #a07850;
+    letter-spacing: 1px;
+}
+
 /* ===== ESKÜVŐ OLDAL ===== */
 
 body.invite {
